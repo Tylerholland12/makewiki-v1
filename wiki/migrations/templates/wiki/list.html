@@ -1,0 +1,6 @@
+{% extends 'base.html' %}
+{% block content %}
+{% for item in object_list %}
+    <a href="/w/{{ item.slug }}">{{ item.title }}</a><br>
+{% endfor %}
+{% endblock %}
